@@ -51,7 +51,6 @@
                     <dependency>
                         <groupId>org.apache.openjpa</groupId>
                         <artifactId>openjpa</artifactId>
-                        <!-- set the version to be the same as the level in your runtime -->
                         <version>2.0.1</version>
                     </dependency>
                 </dependencies>
