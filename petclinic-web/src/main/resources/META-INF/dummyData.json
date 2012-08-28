@@ -1,0 +1,27 @@
+{
+    "vets": [
+        {"id":"1", "firstName":"James", "lastName":"Carter", "specialties":  ["SURGERY"]},
+        {"id":"2", "firstName":"Helen", "lastName":"Leary", "specialties":   ["SURGERY"]},
+        {"id":"3", "firstName":"Linda", "lastName":"Douglas", "specialties": ["RADIOLOGY"]},
+        {"id":"4", "firstName":"Rafael", "lastName":"Ortega", "specialties": ["DENTISTRY"]},
+        {"id":"5", "firstName":"Henry", "lastName":"Stevens", "specialties": ["RADIOLOGY"]},
+        {"id":"6", "firstName":"Sharon", "lastName":"Jenkins", "specialties":["DENTISTRY"]}
+    ],
+    "owners": [
+        {"id":"7","firstName":"George", "lastName":"Franklin", "address":"110 W. Liberty St.", "city":"Madison", "telephone":"6085551023",
+            "pets":[{"id":"12","name":"Leo", "type":"ELEPHANT", "birthDate":"2011-01-01"}, {"id":"13","name":"Basil", "type":"MONKEY", "birthDate":"2011-01-01"}]
+        },
+        {"id":"8","firstName":"Betty", "lastName":"Davis", "address":"110 W. Liberty St.", "city":"Madison", "telephone":"6085551023",
+            "pets":[{"id":"14","name":"Leo", "type":"ELEPHANT", "birthDate":"2011-01-01"}, {"id":"15","name":"Basil", "type":"MONKEY", "birthDate":"2011-01-01"}]
+        },
+        {"id":"9","firstName":"Eduardo", "lastName":"Rodriquez", "address":"110 W. Liberty St.", "city":"Madison", "telephone":"6085551023",
+            "pets":[{"id":"16","name":"Leo", "type":"ELEPHANT", "birthDate":"2011-01-01"}, {"id":"17","name":"Basil", "type":"MONKEY", "birthDate":"2011-01-01"}]
+        },
+        {"id":"10","firstName":"Harold", "lastName":"Davis", "address":"110 W. Liberty St.", "city":"Madison", "telephone":"6085551023",
+            "pets":[{"id":"18","name":"David", "type":"ELEPHANT", "birthDate":"2011-01-01"}, {"id":"19","name":"Basil", "type":"MONKEY", "birthDate":"2011-01-01"}]
+        },
+        {"id":"11","firstName":"Peter", "lastName":"McTavish", "address":"110 W. Liberty St.", "city":"Madison", "telephone":"6085551023",
+            "pets":[{"id":"19","name":"Leo", "type":"ELEPHANT", "birthDate":"2011-01-01"}, {"id":"20","name":"Basil", "type":"MONKEY", "birthDate":"2011-01-01"}]
+        }
+    ]
+}

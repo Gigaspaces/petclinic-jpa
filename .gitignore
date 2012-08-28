@@ -1,6 +1,15 @@
+.idea/
+petclinic-common/target/
+petclinic-processor/target/
+petclinic-web/traget/
+*.iml
 *.class
-
-# Package Files #
 *.jar
 *.war
 *.ear
+.DS_Store
+.project
+.settings
+*/.project
+*/.classpath
+*/.settings
