@@ -1,4 +1,5 @@
 .idea/
+target/
 petclinic-common/target/
 petclinic-processor/target/
 petclinic-web/traget/
