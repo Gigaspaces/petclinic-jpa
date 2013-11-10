@@ -40,7 +40,7 @@ public class BaseEntity implements Serializable{
 
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o.getClass().equals(this.getClass()))) return false;
+        if (o == null || !(o.getClass().equals(this.getClass()))) return false;
         BaseEntity that = (BaseEntity) o;
         if (id != null ? !id.equals(that.id) : that.id != null) return false;
         return true;
