@@ -93,5 +93,5 @@ public interface Clinic {
 	void deletePet(Pet petToDelete) throws DataAccessException;
 
     @ExecutorRemotingMethod(broadcast =false, remoteInvocationAspect = "idGeneratingInvocationAspect")
-    void storeVet(Vet vet);
+    void storeVet(@Routing("getId") Vet vet);
 }
