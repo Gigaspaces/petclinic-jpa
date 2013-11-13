@@ -28,7 +28,6 @@
             </resource>
 
         </resources>
-        <pluginManagement>
        
         <plugins>
             <plugin>
@@ -58,8 +57,7 @@
                 </dependencies>
             </plugin>
         </plugins>
-    </pluginManagement>
-
+   
     </build>
     <dependencies>
     </dependencies>

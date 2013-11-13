@@ -42,7 +42,7 @@ public class BaseEntity implements Serializable{
         if (this == o) return true;
         if (o == null || !(o.getClass().equals(this.getClass()))) return false;
         BaseEntity that = (BaseEntity) o;
-        if (id != null ? !id.equals(that.id) : that.id != null) return false;
+        if (getId() != null ? !getId().equals(that.getId()) : that.getId()!= null) return false;
         return true;
     }
 
