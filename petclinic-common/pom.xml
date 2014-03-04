@@ -4,12 +4,12 @@
     <groupId>com.gigaspaces.petclinic</groupId>
     <artifactId>petclinic-common</artifactId>
     <packaging>jar</packaging>
-    <version>9.7.1-SNAPSHOT</version>
+    <version>9.7.1-10701-81-SNAPSHOT</version>
     <name>petclinic-common</name>
     <parent>
         <groupId>com.gigaspaces.petclinic</groupId>
         <artifactId>petclinic-app</artifactId>
-        <version>9.7.1-SNAPSHOT</version>
+        <version>9.7.1-10701-81-SNAPSHOT</version>
     </parent>
     <build>
         <finalName>petclinic-common</finalName>
