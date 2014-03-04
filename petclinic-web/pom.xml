@@ -5,11 +5,11 @@
     <artifactId>petclinic-web</artifactId>
     <name>petclinic-web</name>
     <packaging>war</packaging>
-    <version>9.7.1-SNAPSHOT</version>
+    <version>9.7.1-10701-81-SNAPSHOT</version>
     <parent>
         <groupId>com.gigaspaces.petclinic</groupId>
         <artifactId>petclinic-app</artifactId>
-        <version>9.7.1-SNAPSHOT</version>
+        <version>9.7.1-10701-81-SNAPSHOT</version>
     </parent>
     <properties>
         <gsType>PU</gsType>
