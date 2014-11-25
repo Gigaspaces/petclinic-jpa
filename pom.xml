@@ -3,11 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.gigaspaces.petclinic</groupId>
     <artifactId>petclinic-app</artifactId>
-    <version>10.1.0-SNAPSHOT</version>
+    <version>10.1.0-12588-M7</version>
     <name>petclinic-app</name>
     <packaging>pom</packaging>
     <properties>
-        <gsVersion>10.1.0-SNAPSHOT</gsVersion>
+        <gsVersion>10.1.0-12588-M7</gsVersion>
         <springVersion>3.2.4.RELEASE</springVersion>
         <slf4j.version>1.6.6</slf4j.version>
 
