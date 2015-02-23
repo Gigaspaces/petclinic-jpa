@@ -1,7 +1,7 @@
 package org.springframework.samples.petclinic.util;
 
-import org.codehaus.jackson.JsonNode;
-import org.codehaus.jackson.map.ObjectMapper;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.samples.petclinic.*;
 
@@ -56,39 +56,39 @@ public class DummyDataCreator {
         ObjectMapper mapper = new ObjectMapper();
         JsonNode rootNode = mapper.readTree(dataFileResource.getInputStream());
         JsonNode vetsNode = rootNode.get("vets");
-        Iterator<JsonNode> vetNodesIterator = vetsNode.getElements();
+        Iterator<JsonNode> vetNodesIterator = vetsNode.iterator();
         while (vetNodesIterator.hasNext()) {
             JsonNode vetNode = vetNodesIterator.next();
             Vet vet = new Vet();
-            vet.setFirstName(vetNode.get("firstName").getValueAsText());
-            vet.setLastName(vetNode.get("lastName").getValueAsText());
-            Iterator<JsonNode> specialtiesNode = vetNode.get("specialties").getElements();
+            vet.setFirstName(vetNode.get("firstName").asText());
+            vet.setLastName(vetNode.get("lastName").asText());
+            Iterator<JsonNode> specialtiesNode = vetNode.get("specialties").iterator();
             while (specialtiesNode.hasNext()) {
-                Specialty specialty = Specialty.valueOf(specialtiesNode.next().getTextValue());
+                Specialty specialty = Specialty.valueOf(specialtiesNode.next().asText());
                 vet.addSpecialty(specialty);
             }
             entities.add(vet);
         }
 
         JsonNode ownersNode = rootNode.get("owners");
-        Iterator<JsonNode> ownerNodesIterator = ownersNode.getElements();
+        Iterator<JsonNode> ownerNodesIterator = ownersNode.iterator();
         while (ownerNodesIterator.hasNext()) {
             JsonNode ownerNode = ownerNodesIterator.next();
             Owner owner = new Owner();
-            owner.setId(ownerNode.get("id").getValueAsInt());
-            owner.setFirstName(ownerNode.get("firstName").getValueAsText());
-            owner.setLastName(ownerNode.get("lastName").getValueAsText());
-            owner.setAddress(ownerNode.get("address").getValueAsText());
-            owner.setCity(ownerNode.get("city").getValueAsText());
-            owner.setTelephone(ownerNode.get("telephone").getValueAsText());
-            Iterator<JsonNode> petNodes= ownerNode.get("pets").getElements();
+            owner.setId(ownerNode.get("id").asInt());
+            owner.setFirstName(ownerNode.get("firstName").asText());
+            owner.setLastName(ownerNode.get("lastName").asText());
+            owner.setAddress(ownerNode.get("address").asText());
+            owner.setCity(ownerNode.get("city").asText());
+            owner.setTelephone(ownerNode.get("telephone").asText());
+            Iterator<JsonNode> petNodes= ownerNode.get("pets").iterator();
             while (petNodes.hasNext()) {
                 JsonNode petNode =  petNodes.next();
                 Pet pet = new Pet();
-                pet.setId(petNode.get("id").getValueAsInt());
-                pet.setName(petNode.get("name").getValueAsText());
-                pet.setType(PetType.valueOf(petNode.get("type").getValueAsText()));
-                pet.setBirthDate(dateFormat.parse(petNode.get("birthDate").getValueAsText()));
+                pet.setId(petNode.get("id").asInt());
+                pet.setName(petNode.get("name").asText());
+                pet.setType(PetType.valueOf(petNode.get("type").asText()));
+                pet.setBirthDate(dateFormat.parse(petNode.get("birthDate").asText()));
                 owner.addPet(pet);
             }
             entities.add(owner);

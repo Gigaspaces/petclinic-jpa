@@ -40,18 +40,12 @@
             <version>1.1.2</version>
         </dependency>
 
-        <!-- Rome RSS -->
         <dependency>
-            <groupId>com.sun.syndication</groupId>
-            <artifactId>com.springsource.com.sun.syndication</artifactId>
-            <version>1.0.0</version>
+            <groupId>com.rometools</groupId>
+            <artifactId>rome</artifactId>
+            <version>1.5.0</version>
         </dependency>
-        <dependency>
-            <groupId>org.jdom</groupId>
-            <artifactId>com.springsource.org.jdom</artifactId>
-            <version>1.1.0</version>
-            <scope>runtime</scope>
-        </dependency>
+
 
         <!-- JAXB -->
         <dependency>
@@ -104,8 +98,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
                     <verbose>true</verbose>
-                    <source>1.5</source>
-                    <target>1.5</target>
+                    <source>1.6</source>
+                    <target>1.6</target>
                     <showWarnings>true</showWarnings>
                 </configuration>
             </plugin>
