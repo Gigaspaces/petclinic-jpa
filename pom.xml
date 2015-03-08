@@ -2,9 +2,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.gigaspaces.petclinic-jpa</groupId>
-    <artifactId>petclinic-app</artifactId>
+    <artifactId>petclinic-app-jpa</artifactId>
     <version>10.1.0-SNAPSHOT</version>
-    <name>petclinic-app</name>
+    <name>petclinic-app-jpa</name>
     <packaging>pom</packaging>
     <properties>
         <gsVersion>10.1.0-SNAPSHOT</gsVersion>
