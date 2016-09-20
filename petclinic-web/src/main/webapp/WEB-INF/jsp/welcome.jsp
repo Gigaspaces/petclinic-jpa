@@ -7,7 +7,7 @@
 <ul>
   <li><a href="<spring:url value="/owners/search" htmlEscape="true" />">Find owner</a></li>
   <li><a href="<spring:url value="/vets" htmlEscape="true" />">Display all veterinarians</a></li>
-  <li><a href="<spring:url value="http://www.gigaspaces.com/wiki/display/XAP8/Introduction+to+XAP+JPA" htmlEscape="true" />" target="_new">Tutorial</a></li>
+  <li><a href="<spring:url value="http://docs.gigaspaces.com/sbp/first-jpa-app.html" htmlEscape="true" />" target="_new">Tutorial</a></li>
   <li><a href="<spring:url value="/createDummyData" htmlEscape="true" />">Create Dummy Data</a></li>
   <c:if test="${dummyDataCreated != null}">
     <span>Dummy Data Created</span>
