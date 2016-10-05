@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xmlns:os-sla="http://www.openspaces.org/schema/sla"
+       xmlns:os-sla="http://openspaces.gigaspaces.org/schema/sla"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
-       http://www.openspaces.org/schema/sla http://www.openspaces.org/schema/sla/openspaces-sla.xsd">
+       http://openspaces.gigaspaces.org/schema/sla http://openspaces.gigaspaces.org/schema/sla/openspaces-sla.xsd">
 
     <!--
         The SLA bean used when deploying this processing unit to the Service Grid.
