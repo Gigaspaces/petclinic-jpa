@@ -1,7 +1,8 @@
 package org.springframework.samples.petclinic.gigaspaces.idgen;
 
-import com.j_spaces.core.client.ReadModifiers;
-import com.j_spaces.core.client.UpdateModifiers;
+import com.gigaspaces.client.ReadModifiers;
+import com.gigaspaces.client.WriteModifiers;
+
 import net.jini.core.lease.Lease;
 import org.openspaces.core.GigaSpace;
 import org.springframework.transaction.annotation.Propagation;
@@ -35,13 +36,13 @@ public class IdGeneratorImpl implements IdGenerator {
     }
 
     private void getNextIdBatchFromSpace() {
-        IdCounterEntry idCounterEntry = gigaSpace.readById(IdCounterEntry.class,0,0, 5000, ReadModifiers.EXCLUSIVE_READ_LOCK);
+        IdCounterEntry idCounterEntry = gigaSpace.readById(IdCounterEntry.class, 0, 0, 5000, ReadModifiers.EXCLUSIVE_READ_LOCK);
         if (idCounterEntry == null) {
             throw new RuntimeException("Could not get ID object from Space");
         }
         int[] range = idCounterEntry.getIdRange();
         currentId = range[0];
         idLimit = range[1];
-        gigaSpace.write(idCounterEntry, Lease.FOREVER, 5000, UpdateModifiers.UPDATE_ONLY);
+        gigaSpace.write(idCounterEntry, Lease.FOREVER, 5000, WriteModifiers.UPDATE_ONLY);
     }
 }

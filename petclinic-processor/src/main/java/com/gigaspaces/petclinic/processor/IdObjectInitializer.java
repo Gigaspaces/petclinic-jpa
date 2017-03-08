@@ -1,6 +1,8 @@
 package com.gigaspaces.petclinic.processor;
 
-import com.j_spaces.core.client.UpdateModifiers;
+
+import com.gigaspaces.client.WriteModifiers;
+
 import net.jini.core.lease.Lease;
 import org.openspaces.core.GigaSpace;
 import org.openspaces.core.cluster.ClusterInfo;
@@ -48,7 +50,8 @@ public class IdObjectInitializer implements InitializingBean{
         if (shouldWriteIdObjectToSpace())   {
             IdCounterEntry existingEntry = gigaSpace.readById(IdCounterEntry.class, 0);
             if (existingEntry == null) {
-                gigaSpace.write(new IdCounterEntry(initialValue, idRange) ,Lease.FOREVER,0,UpdateModifiers.WRITE_ONLY ) ;
+                gigaSpace.write(new IdCounterEntry(initialValue, idRange) , Lease.FOREVER, 0,
+                                WriteModifiers.WRITE_ONLY ) ;
             	System.out.println("IdObjectInitializer wrote IdCounterEntry");
             }
         }
