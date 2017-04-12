@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.gigaspaces.petclinic</groupId>
     <artifactId>petclinic-app</artifactId>
-    <version>11.0.0-14800-RELEASE</version>
+    <version>11.0.0-14857-RELEASE</version>
     <name>petclinic-app</name>
     <packaging>pom</packaging>
     <properties>
