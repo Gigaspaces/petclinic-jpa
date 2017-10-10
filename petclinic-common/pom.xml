@@ -8,7 +8,7 @@
     <parent>
         <groupId>com.gigaspaces.petclinic</groupId>
         <artifactId>petclinic-app</artifactId>
-        <version>10.2.1-14100-RELEASE</version>
+        <version>10.2.1-SNAPSHOT</version>
     </parent>
     <build>
         <finalName>petclinic-common</finalName>
